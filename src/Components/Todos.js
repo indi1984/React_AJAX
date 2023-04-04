@@ -5,8 +5,8 @@ function Todos({todos, getSingleTodo}) {
     <ul>
       {
         todos.map((todo) => (
-          <li key={todo.id} onClick={() => 
-            getSingleTodo(todo.id)}>{todo.title}
+          <li key={todo.id} onClick={() => getSingleTodo(todo.id)}>
+            {todo.title}
           </li>
         ))
       }
